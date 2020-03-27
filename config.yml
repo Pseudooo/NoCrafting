@@ -1,0 +1,20 @@
+# # # # # # # # # # # # # # # # #
+# Configuration for NoCrafting  #
+#          by pseudo            #
+# # # # # # # # # # # # # # # # #
+#
+# Should the plugin block crafting recipes for users that posses the 
+# following permission: nocrafting.admin
+block-admins: false
+#
+# Should the plugin notify the user when they try to craft a blocked recipe 
+notify-user: true
+#
+# Message to be sent to the user if notify-user is true.
+notify-message: "&cThis recipe has been disabled by an administrator!"
+#
+# Use the minecraft IDs of items that can be crafted and the plugin
+# will disable their crafting
+blocked-items:
+  - minecraft:diamond_sword
+  - minecraft:diamond_pickaxe

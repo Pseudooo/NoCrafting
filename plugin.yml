@@ -1,5 +1,22 @@
 name: NoCrafting
-version: 0.0.1
+version: 1.0.4
 description: Disables user-defined crafting recipes
 main: me.pseudo.NoCrafting
 api-version: 1.13
+
+commands:
+  nocraftingreload:
+     aliases: ncreload
+     permission: nocrafting.admin
+     permission-message: "You lack the permissions to do this!"
+     usage: /nocraftingreload
+
+permissions:
+  
+  nocrafting.*:
+    description: Gives access to all nocrafting utilities!
+    children:
+      nocrafting.admin: true
+    
+  nocrafting.admin:
+    description: Grants a user admin-status and reload command
