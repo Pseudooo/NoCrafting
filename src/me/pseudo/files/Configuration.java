@@ -20,10 +20,11 @@ public class Configuration {
 	public Configuration(JavaPlugin plugin) {
 		this.plugin = plugin;
 		
-		// Take the default cfg to the dataFolder
-		plugin.saveResource("config.yml", false);
-		
 		configFile = new File(plugin.getDataFolder(), "config.yml");
+		
+		// Take the default cfg to the dataFolder
+		if(!configFile.exists()) plugin.saveResource("config.yml", false);
+		
 		
 		reload();
 		

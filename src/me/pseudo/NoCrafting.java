@@ -19,8 +19,4 @@ public class NoCrafting extends JavaPlugin {
 		
 	}
 	
-	public void onDisable() {
-		
-	}
-	
 }
