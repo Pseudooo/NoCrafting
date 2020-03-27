@@ -25,8 +25,18 @@ public class Configuration {
 		
 		configFile = new File(plugin.getDataFolder(), "config.yml");
 		
+		reload();
+		
+	}
+	
+	/**
+	 * Reload the configuration
+	 * @return boolean to determine if the reload was a success
+	 */
+	public boolean reload() {
 		try {
 			load();
+			return true;
 		}catch(FileNotFoundException e) {
 			disablePlugin("Failed to locate configuration file!");
 		}catch(IOException e) {
@@ -34,7 +44,7 @@ public class Configuration {
 		}catch(InvalidConfigurationException e) {
 			disablePlugin("Invalid Configuration!");
 		}
-		
+		return false;
 	}
 	
 	private void disablePlugin(String reason) {
