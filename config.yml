@@ -11,7 +11,7 @@ block-admins: false
 notify-user: true
 #
 # Message to be sent to the user if notify-user is true.
-notify-message: &cThis recipe has been disabled by an administrator!
+notify-message: "&cThis recipe has been disabled by an administrator!"
 #
 # Use the minecraft IDs of items that can be crafted and the plugin
 # will disable their crafting

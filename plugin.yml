@@ -3,3 +3,15 @@ version: 0.0.1
 description: Disables user-defined crafting recipes
 main: me.pseudo.NoCrafting
 api-version: 1.13
+
+
+
+permissions:
+  
+  nocrafting.*:
+    description: Gives access to all nocrafting utilities!
+    children:
+      nocrafting.admin: true
+    
+  nocrafting.admin:
+    description: Grants a user admin-status

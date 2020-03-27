@@ -12,7 +12,7 @@ public class NoCrafting extends JavaPlugin {
 		final Configuration config = new Configuration(this);
 		
 		// Register listeners
-		new CraftingListener(this);
+		new CraftingListener(this, config);
 		
 	}
 	
