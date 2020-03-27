@@ -1,0 +1,5 @@
+name: NoCrafting
+version: 0.0.1
+description: Disables user-defined crafting recipes
+main: me.pseudo.NoCrafting
+api-version: 1.13
