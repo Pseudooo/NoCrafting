@@ -4,8 +4,6 @@ description: Disables user-defined crafting recipes
 main: me.pseudo.NoCrafting
 api-version: 1.13
 
-
-
 permissions:
   
   nocrafting.*:
