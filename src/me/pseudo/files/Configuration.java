@@ -91,6 +91,10 @@ public class Configuration {
 		return NOTIFY_MSG;
 	}
 	
+	public List<Material> getBlockedItems() {
+		return this.BLOCKED_ITEMS;
+	}
+	
 	// * * * * * * * * * * * END OF GETTERS
 	
 	// * * * * * * * * * * * * * * * * * * * * * * * CONFIG ELEMENTS
